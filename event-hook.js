@@ -31,7 +31,7 @@
 		
 		self.broadCast = self.emit = function(nameSpace, data){
 			if (subscription[nameSpace]){
-				subscription[nameSpace].forEach(function(callback, callbackIndex, callbackArray){
+				subscription[nameSpace].forEach(function(callback){
 					callback(data);
 				})
 			}
