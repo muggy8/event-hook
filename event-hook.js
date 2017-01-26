@@ -1,20 +1,20 @@
 (function(context){
 	
-	var defaultConfig = {
+	/*var defaultConfig = {
 		
-	}
+	}*/
 	
-	var EventHook = context.EventHook = function(config){
-		config = config || {};
+	var EventHook = context.EventHook = function(/*config*/){
+		/*config = config || {};*/
 		var self = this;
-		var instanceConfigs = {};
+		/*var instanceConfigs = {};
 		
 		Object.keys(defaultConfig).forEach(function(key, keyIndex, keyCollection){
 			instanceConfigs[key] = defaultConfig[key]
 		})
 		Object.keys(config).forEach(function(key, keyIndex, keyCollection){
 			instanceConfigs[key] = config[key];
-		})
+		})*/
 		
 		var subscription = {}; 
 		/* example
@@ -46,11 +46,11 @@
 		}
 	}
 	
-	EventHook.setConfigs = function(config){
+	/*EventHook.setConfigs = function(config){
 		Object.keys(config).forEach(function(key, keyIndex, keyCollection){
 			defaultConfig[key] = config[key];
 		})
-	}
+	}*/
 	
 	if (typeof module != 'undefined' ) {module.exports = context.EventHook};
 })(this)
