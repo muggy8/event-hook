@@ -1,7 +1,17 @@
 <html>
 	<head>
-		<script src="./event-hook.min.js"></script>
+		<script src="./event-hook.legacy.js"></script>
 	</head>
 	
-	<body></body>
+	<body>
+		<script>
+			var eventSpace = new EventHook();
+			var logger = function(data){
+				console.log("hey I got some data: ", data)
+			}
+			eventSpace.on("data", logger);
+			eventSpace.off("data", logger);
+			eventSpace.emit("data")
+		</script>
+	</body>
 </html>
