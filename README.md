@@ -61,3 +61,9 @@ enemyProto.destroy = function (){
 
 ### eventSpace.unsubscribe(name, callback) || eventSpace.off(name, callback)
 This functions filters through the events currently and gets rid of all the functions that matches the callback's reference. NOTE: you can only do this to referenced callbacks not anonmyous functions
+
+## support?
+This library is really simple. The legacy version seems to work in IE5 according to... IE5... so you're probably safe to use that if you plan on supporting that far back. Either way, have fun with your projects
+
+## Licence?
+MIT = free for all yay~
